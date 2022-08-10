@@ -1,0 +1,44 @@
+body {
+  color: #202020;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12pt;
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 20pt;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+a {
+  color: #0366d6;
+}
+
+ul {
+  line-height: 135%;
+}
+
+li:not(:first-of-type) {
+  margin-top: 0.4em;
+}
+
+.fake-at::before {
+  content: "@";
+}
+
+.invisible {
+  opacity: 0;
+  position: absolute;
+  width: 0.001em;
+  overflow: hidden;
+}
+
+.abstract > p {
+  margin: 0.2em 0em 1em 1em;
+  font-size: 1em;
+}
+
