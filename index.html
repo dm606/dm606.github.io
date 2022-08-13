@@ -20,7 +20,7 @@
         <h2>Publications</h2>
         <ul>
           <li>
-            <b>A type system with subtyping for WebAssembly's stack polymorphism.</b>
+            <strong>A type system with subtyping for WebAssembly's stack polymorphism.</strong>
             <br>Dylan McDermott, Yasuaki Morita, and Tarmo Uustalu.
             <br>ICTAC 2022. (To appear.)
             <details class="abstract">
@@ -28,7 +28,7 @@
               <p>We propose a new type system for WebAssembly. It is a refinement of the type system from the language specification and is based on type qualifiers and subtyping. In the WebAssembly specification, a typable instruction sequence gets many different types, depending in particular on whether it contains instructions such as br (unconditional branch) that are stack-polymorphic in an unusual way. But one cannot single out a canonical type for a typable instruction sequence satisfactorily. We introduce qualifiers on code types to distinguish between the two flavors of stack polymorphism that occur in WebAssembly and a subtyping relation on such qualified types. Our type system gives every typable instruction sequence a canonical type that is principal. We show that the new type system is in a precise relationship to the type system given in the WebAssembly specification. In addition, we describe a typed functional-style big-step semantics based on this new type system underpinned by an indexed graded monad and prove that it prevents stack-manipulation related runtime errors. We have formalized our type system, inference algorithm, and semantics in Agda.
             </details>
           <li>
-            <b>Flexibly graded monads and graded algebras.</b>
+            <strong>Flexibly graded monads and graded algebras.</strong>
             <br>Dylan McDermott and Tarmo Uustalu.
             <br>MPC 2022. (To appear.)
             <br><a href="drafts/flexibly-graded-monads.pdf">draft</a>
@@ -37,7 +37,7 @@
               <p>When modelling side-effects using a monad, we need to equip the monad with effectful operations. This can be done by noting that each algebra of the monad carries interpretations of the desired operations. We consider the analogous situation for graded monads, which are a generalization of monads that enable us to track quantitative information about side-effects. Grading makes a significant difference: while many graded monads of interest can be equipped with similar operations, the algebras often cannot. We explain where these operations come from for graded monads. To do this, we introduce the notion of flexibly graded monad, for which the situation is similar to the situation for ordinary monads. We then show that each flexibly graded monad induces a canonical graded monad in such a way that operations for the flexibly graded monad carry over to the graded monad. In doing this, we reformulate grading in terms of locally graded categories, showing in particular that graded monads are a particular kind of relative monad. We propose that locally graded categories are a useful setting for work on grading in general.
             </details>
           <li>
-            <b>Flexible presentations of graded monads.</b>
+            <strong>Flexible presentations of graded monads.</strong>
             <br>Shin-ya Katsumata, Dylan McDermott, Tarmo Uustalu, and Nicolas Wu.
             <br>ICFP 2022. <a href="https://doi.org/10.1145/3547654">doi:10.1145/3547654</a>
             <br><a href="flexibly-graded-presentations.pdf">local PDF</a>
@@ -47,7 +47,7 @@
               <p>We introduce a notion of flexibly graded presentation that does not suffer from these issues, and develop the associated theory. We show that every flexibly graded presentation induces a graded monad equipped with interpretations of the operations of the presentation, and that all graded monads satisfying a particular condition on colimits have a flexibly graded presentation. As part of this, we show that the usual algebra-preserving correspondence between presentations and a class of monads transfers to an algebra-preserving correspondence between flexibly graded presentations and a class of flexibly graded monads.
             </details>
           <li>
-            <b>Canonical gradings of monads.</b>
+            <strong>Canonical gradings of monads.</strong>
             <br>Flavien Breuvart, Dylan McDermott, and Tarmo Uustalu.
             <br>ACT 2022. (To appear.)
             <br><a href="drafts/canonical-gradings.pdf">draft</a>, <a href="talks/act2022.pdf">slides</a>
@@ -56,7 +56,7 @@
               <p>We define a notion of grading of a monoid T in a monoidal category C, relative to a class of morphisms M (which provide a notion of M-subobject). We show that, under reasonable conditions (including that M forms a factorization system), there is a canonical grading of T. Our application is to graded monads and models of computational effects. We demonstrate our results by characterizing the canonical gradings of a number of monads, for which C is endofunctors with composition. We also show that we can obtain canonical grades for algebraic operations.
             </details>
           <li>
-            <b>What makes a strong monad?</b>
+            <strong>What makes a strong monad?</strong>
             <br>Dylan McDermott and Tarmo Uustalu.
             <br>MSFP 2022. <a href="https://dx.doi.org/10.4204/EPTCS.360.6">doi:10.4204/EPTCS.360.6</a>
             <br><a href="strength.pdf">local PDF</a>, <a href="talks/msfp2022.pdf">slides</a>
@@ -65,7 +65,7 @@
               <p>Strong monads are important for several applications, in particular, in the denotational semantics of effectful languages, where strength is needed to sequence computations that have free variables. Strength is non-trivial: it can be difficult to determine whether a monad has any strength at all, and monads can be strong in multiple ways. We therefore review some of the most important known facts about strength and prove some new ones. In particular, we present a number of equivalent characterizations of strong functor and strong monad, and give some conditions that guarantee existence or uniqueness of strengths. We look at strength from three different perspectives: actions of a monoidal category V, enrichment over V, and powering over V. We are primarily motivated by semantics of effects, but the results are also useful in other contexts.
             </details>
           <li>
-            <b>Galois connecting call-by-value and call-by-name.</b>
+            <strong>Galois connecting call-by-value and call-by-name.</strong>
             <br>Dylan McDermott and Alan Mycroft.
             <br>FSCD 2022. <a href="https://doi.org/10.4230/LIPIcs.FSCD.2022.32">doi:10.4230/LIPIcs.FSCD.2022.32</a>
             <br><a href="value-name.pdf">local PDF</a>, <a href="talks/fscd2022.pdf">slides</a>
@@ -75,7 +75,7 @@
               <p>In languages with side-effects, call-by-value and call-by-name executions of programs often have different, but related, observable behaviours. For example, if a program might diverge but otherwise has no side-effects, then whenever it terminates under call-by-value, it terminates with the same result under call-by-name. We propose a technique for stating and proving these properties. The key ingredient is Levy's call-by-push-value calculus, which we use as a framework for reasoning about evaluation orders. We construct maps between the call-by-value and call-by-name interpretations of types. We then identify properties of side-effects that imply these maps form a Galois connection. These properties hold for some side-effects (such as divergence), but not others (such as mutable state). This gives rise to a general reasoning principle that relates call-by-value and call-by-name. We apply the reasoning principle to example side-effects including divergence and nondeterminism.
             </details>
           <li>
-            <b>Sweedler theory of monads.</b>
+            <strong>Sweedler theory of monads.</strong>
             <br>Dylan McDermott, Exequiel Rivas, and Tarmo Uustalu.
             <br>FoSSaCS 2022. <a href="https://doi.org/10.1007/978-3-030-99253-8_22">doi:10.1007/978-3-030-99253-8_22</a>
             <br><a href="sweedler-theory-of-monads.pdf">local PDF</a>, <a href="talks/fossacs2022.pdf">slides</a>
@@ -84,7 +84,7 @@
               <p>Monad-comonad interaction laws are a mathematical concept for describing communication protocols between effectful computations and coeffectful environments in the paradigm where notions of effectful computation are modelled by monads and notions of coeffectful environment by comonads. We show that monad-comonad interaction laws are an instance of measuring maps from Sweedler theory for duoidal categories whereby the final interacting comonad for a monad and a residual monad arises as the Sweedler hom and the initial residual monad for a monad and an interacting comonad as the Sweedler copower. We then combine this with a (co)algebraic characterization of monad-comonad interaction laws to derive descriptions of the Sweedler hom and the Sweedler copower in terms of their coalgebras resp. algebras.
             </details>
           <li>
-            <b>Abstract clones for abstract syntax.</b>
+            <strong>Abstract clones for abstract syntax.</strong>
             <br>Nathanael Arkor and Dylan McDermott.
             <br>FSCD 2021. <a href="https://doi.org/10.4230/LIPIcs.FSCD.2021.30">doi:10.4230/LIPIcs.FSCD.2021.30</a>
             <br><a href="abstract-clones-abstract-syntax.pdf">local PDF</a>
@@ -93,7 +93,7 @@
               <p>We give a formal treatment of simple type theories, such as the simply-typed λ-calculus, using the framework of abstract clones. Abstract clones traditionally describe first-order structures, but by equipping them with additional algebraic structure, one can further axiomatize second-order, variable-binding operators. This provides a syntax-independent representation of simple type theories. We describe multisorted second-order presentations, such as the presentation of the simply-typed λ-calculus, and their clone-theoretic algebras; free algebras on clones abstractly describe the syntax of simple type theories quotiented by equations such as β- and η-equality. We give a construction of free algebras and derive a corresponding induction principle, which facilitates syntax-independent proofs of properties such as adequacy and normalization for simple type theories. Working only with clones avoids some of the complexities inherent in presheaf-based frameworks for abstract syntax.
             </details>
           <li>
-            <b>Degrading lists.</b>
+            <strong>Degrading lists.</strong>
             <br>Dylan McDermott, Maciej Piróg, and Tarmo Uustalu.
             <br>PPDP 2020. <a href="https://doi.org/10.1145/3414080.3414084">doi:10.1145/3414080.3414084</a>
             <br><a href="degrading-lists.pdf">local PDF</a>, <a href="talks/ppdp2020.pdf">slides</a>, <a href="https://github.com/maciejpirog/exotic-list-monads">Haskell code</a>
@@ -102,10 +102,10 @@
               <p>We discuss the relationship between monads and their known generalisation, graded monads, which are especially useful for modelling computational effects equipped with a form of sequential composition. Specifically, we ask if a graded monad can be extended to a monad, and when such a degrading is in some sense canonical. Our particular examples are the graded monads of lists and non-empty lists indexed by their lengths, which gives us a pretext to study the space of all (non-graded) monad structures on the list and non-empty list endofunctors. We show that, in both cases, there exist infinitely many monad structures. However, while there are at least two ways to complete the graded monad structure on length-indexed lists to a monad structure on the list endofunctor, such a completion for non-empty lists is unique.
             </details>
           <li>
-            <b>Extended call-by-push-value: reasoning about effectful programs and evaluation order.</b>
+            <strong>Extended call-by-push-value: reasoning about effectful programs and evaluation order.</strong>
             <br>Dylan McDermott and Alan Mycroft.
             <br>ESOP 2019. <a href="https://doi.org/10.1007/978-3-030-17184-1_9">doi:10.1007/978-3-030-17184-1_9</a>
-            <br><b>Winner of <a href="https://www.etaps.org/2019/best-papers">EAPLS Best Paper Award</a>.</b>
+            <br><strong>Winner of <a href="https://www.etaps.org/2019/best-papers">EAPLS Best Paper Award</a>.</strong>
             <br><a href="extended-call-by-push-value.pdf">local PDF</a>, <a href="talks/esop2019.pdf">slides</a>
             <details class="abstract">
               <summary>abstract</summary>
@@ -114,7 +114,7 @@
               <p>We then show how to incorporate an effect system.  This enables us to exploit static knowledge of the potential effects of a given expression to augment equational reasoning; thus a program fragment might be invariant under change of evaluation regime only because of knowledge of its effects.
             </details>
           <li>
-            <b>Factorisation systems for logical relations and monadic lifting in type-and-effect system semantics.</b>
+            <strong>Factorisation systems for logical relations and monadic lifting in type-and-effect system semantics.</strong>
             <br>Ohad Kammar and Dylan McDermott.
             <br>MFPS 2018. <a href="https://doi.org/10.1016/j.entcs.2018.11.012">doi;10.1016/j.entcs.2018.11.012</a>
             <br><a href="factorisation-systems.pdf">local PDF</a>, <a href="talks/mfps2018.pdf">slides</a>
@@ -123,7 +123,7 @@
               <p>Type-and-effect systems incorporate information about the computational effects, e.g., state mutation, probabilistic choice, or I/O, a program phrase may invoke alongside its return value. A semantics for type-and-effect systems involves a parameterised family of monads whose size is exponential in the number of effects. We derive such refined semantics from a single monad over a category, a choice of algebraic operations for this monad, and a suitable factorisation system over this category. We relate the derived semantics to the original semantics using fibrations for logical relations. Our proof uses a folklore technique for lifting monads with operations.
             </details>
           <li>
-            <b>Call-by-need effects via coeffects.</b>
+            <strong>Call-by-need effects via coeffects.</strong>
             <br>Dylan McDermott and Alan Mycroft.
             <br>Open Computer Science, 2018. <a href="https://doi.org/10.1515/comp-2018-0009">doi:10.1515/comp-2018-0009</a>
             <br><a href="call-by-need-effects.pdf">local PDF</a>
@@ -133,7 +133,7 @@
               <p>We consider the problem of designing an effect system for a lazy language. This is more challenging because it depends on the ability to locate the first use of each variable. Coeffect systems, which track contextual requirements of programs, provide a method of doing this. We describe how to track variable usage in a coeffect system that can be instantiated for different reduction strategies, including call-by-need. We then add effects to the result, allowing work that has been done on effect systems for call-by-value languages to be applied to lazy languages.
             </details>
           <li>
-            <b>Project Snowflake: Non-blocking Safe Manual Memory Management in .NET.</b>
+            <strong>Project Snowflake: Non-blocking Safe Manual Memory Management in .NET.</strong>
             <br>Matthew Parkinson, Dimitrios Vytiniotis, Kapil Vaswani, Manuel Costa, Pantazis Deligiannis, Dylan McDermott, Aaron Blankstein, and Jonathan Balkind.
             <br>OOPSLA 2017. <a href="https://doi.org/10.1145/3141879">doi:10.1145/3141879</a>
             <br><a href="snowflake.pdf">local PDF</a>
@@ -148,7 +148,7 @@
         <h2>Drafts</h2>
         <ul>
           <li>
-            <b>Canonical gradings of monads.</b>
+            <strong>Canonical gradings of monads.</strong>
             <br>Flavien Breuvart, Dylan McDermott, and Tarmo Uustalu.
             <br>Last updated: July 2022.
             <br><a href="drafts/canonical-gradings.pdf">PDF</a>
@@ -157,7 +157,7 @@
               <p>We define a notion of grading of a monoid T in a monoidal category C, relative to a class of morphisms M (which provide a notion of M-subobject). We show that, under reasonable conditions (including that M forms a factorization system), there is a canonical grading of T. Our application is to graded monads and models of computational effects. We demonstrate our results by characterizing the canonical gradings of a number of monads, for which C is endofunctors with composition. We also show that we can obtain canonical grades for algebraic operations.
             </details>
           <li>
-            <b>Flexibly graded monads and graded algebras.</b>
+            <strong>Flexibly graded monads and graded algebras.</strong>
             <br>Dylan McDermott and Tarmo Uustalu.
             <br>Last updated: July 2022.
             <br><a href="drafts/flexibly-graded-monads.pdf">PDF</a>
@@ -166,7 +166,7 @@
               <p>When modelling side-effects using a monad, we need to equip the monad with effectful operations. This can be done by noting that each algebra of the monad carries interpretations of the desired operations. We consider the analogous situation for graded monads, which are a generalization of monads that enable us to track quantitative information about side-effects. Grading makes a significant difference: while many graded monads of interest can be equipped with similar operations, the algebras often cannot. We explain where these operations come from for graded monads. To do this, we introduce the notion of flexibly graded monad, for which the situation is similar to the situation for ordinary monads. We then show that each flexibly graded monad induces a canonical graded monad in such a way that operations for the flexibly graded monad carry over to the graded monad. In doing this, we reformulate grading in terms of locally graded categories, showing in particular that graded monads are a particular kind of relative monad. We propose that locally graded categories are a useful setting for work on grading in general.
             </details>
           <li>
-            <b>Galois connecting call-by-value and call-by-name.</b> (Extended version.)
+            <strong>Galois connecting call-by-value and call-by-name.</strong> (Extended version.)
             <br>Dylan McDermott and Alan Mycroft.
             <br>Last updated: February 2022.
             <br><a href="drafts/value-name.pdf">PDF</a>
@@ -176,7 +176,7 @@
               <p>In languages with side-effects, call-by-value and call-by-name executions of programs often have different, but related, observable behaviours. For example, if a program might diverge but otherwise has no side-effects, then whenever it terminates under call-by-value, it terminates with the same result under call-by-name. We propose a technique for stating and proving these properties. The key ingredient is Levy's call-by-push-value calculus, which we use as a framework for reasoning about evaluation orders. We construct maps between the call-by-value and call-by-name interpretations of types. We then identify properties of side-effects that imply these maps form a Galois connection. These properties hold for some side-effects (such as divergence), but not others (such as mutable state). This gives rise to a general reasoning principle that relates call-by-value and call-by-name. We apply the reasoning principle to example side-effects including divergence and nondeterminism.
             </details>
           <li>
-            <b>Higher-order algebraic theories.</b>
+            <strong>Higher-order algebraic theories.</strong>
             <br>Nathanael Arkor and Dylan McDermott.
             <br>Last updated: January 2021.
             <br><a href="drafts/hoat.pdf">PDF</a>
@@ -190,7 +190,7 @@
         <h2>PhD thesis</h2>
         <ul>
           <li>
-            <b>Reasoning about effectful programs and evaluation order.</b>
+            <strong>Reasoning about effectful programs and evaluation order.</strong>
             <br>Submitted October 2019.
             <br><a href="https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-948.html">thesis</a>
         </ul>
@@ -201,37 +201,37 @@
         <p>There is also a <a href="talks/">more complete list</a>.
         <ul>
           <li>
-            <b>Galois connecting call-by-value and call-by-name.</b>
+            <strong>Galois connecting call-by-value and call-by-name.</strong>
             <br>Dylan McDermott and Alan Mycroft.
             <br>FSCD 2022, Haifa, Israel.
             <br><a href="talks/fscd2022.pdf">slides</a>
           <li>
-            <b>Canonical gradings of monads.</b>
+            <strong>Canonical gradings of monads.</strong>
             <br>Flavien Breuvart, Dylan McDermott, and Tarmo Uustalu.
             <br>ACT 2022, Glasgow, UK.
             <br><a href="talks/act2022.pdf">slides</a>
           <li>
-            <b>Flexible presentations of graded monads.</b>
+            <strong>Flexible presentations of graded monads.</strong>
             <br>Shin-ya Katsumata, Dylan McDermott, Tarmo Uustalu, and Nicolas Wu.
             <br>PSSL 106, Brno, Czech Republic.
             <br><a href="talks/pssl106.pdf">slides</a>
           <li>
-            <b>Higher-order algebraic theories.</b>
+            <strong>Higher-order algebraic theories.</strong>
             <br>Nathanael Arkor and Dylan McDermott.
             <br>Partout seminar, LIX, Paris (online), May 2022.
             <br><a href="talks/partout2022.pdf">slides</a>
           <li>
-            <b>Flexible presentations of graded monads.</b>
+            <strong>Flexible presentations of graded monads.</strong>
             <br>Shin-ya Katsumata, Dylan McDermott, Tarmo Uustalu, and Nicolas Wu.
             <br>MSP101 seminar, University of Strathclyde (online), April 2022.
             <br><a href="talks/strathclyde2022.pdf">slides</a>
           <li>
-            <b>Sweedler theory of monads.</b>
+            <strong>Sweedler theory of monads.</strong>
             <br>Dylan McDermott, Exequiel Rivas, and Tarmo Uustalu.
             <br>FoSSaCS 2022, Munich, Germany.
             <br><a href="talks/fossacs2022.pdf">slides</a>
           <li>
-            <b>What makes a strong monad?</b>
+            <strong>What makes a strong monad?</strong>
             <br>Dylan McDermott and Tarmo Uustalu.
             <br>MSFP 2022, Munich, Germany.
             <br><a href="talks/msfp2022.pdf">slides</a>
