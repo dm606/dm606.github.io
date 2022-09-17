@@ -23,6 +23,7 @@
             <strong>A type system with subtyping for WebAssembly's stack polymorphism.</strong>
             <br>Dylan McDermott, Yasuaki Morita, and Tarmo Uustalu.
             <br>ICTAC 2022. (To appear.)
+            <br><a href="wasm-subtyping.pdf">local PDF</a>
             <details class="abstract">
               <summary>abstract</summary>
               <p>We propose a new type system for WebAssembly. It is a refinement of the type system from the language specification and is based on type qualifiers and subtyping. In the WebAssembly specification, a typable instruction sequence gets many different types, depending in particular on whether it contains instructions such as br (unconditional branch) that are stack-polymorphic in an unusual way. But one cannot single out a canonical type for a typable instruction sequence satisfactorily. We introduce qualifiers on code types to distinguish between the two flavors of stack polymorphism that occur in WebAssembly and a subtyping relation on such qualified types. Our type system gives every typable instruction sequence a canonical type that is principal. We show that the new type system is in a precise relationship to the type system given in the WebAssembly specification. In addition, we describe a typed functional-style big-step semantics based on this new type system underpinned by an indexed graded monad and prove that it prevents stack-manipulation related runtime errors. We have formalized our type system, inference algorithm, and semantics in Agda.
@@ -31,7 +32,7 @@
             <strong>Flexibly graded monads and graded algebras.</strong>
             <br>Dylan McDermott and Tarmo Uustalu.
             <br>MPC 2022. (To appear.)
-            <br><a href="drafts/flexibly-graded-monads.pdf">draft</a>
+            <br><a href="flexibly-graded-monads.pdf">local PDF</a>
             <details class="abstract">
               <summary>abstract</summary>
               <p>When modelling side-effects using a monad, we need to equip the monad with effectful operations. This can be done by noting that each algebra of the monad carries interpretations of the desired operations. We consider the analogous situation for graded monads, which are a generalization of monads that enable us to track quantitative information about side-effects. Grading makes a significant difference: while many graded monads of interest can be equipped with similar operations, the algebras often cannot. We explain where these operations come from for graded monads. To do this, we introduce the notion of flexibly graded monad, for which the situation is similar to the situation for ordinary monads. We then show that each flexibly graded monad induces a canonical graded monad in such a way that operations for the flexibly graded monad carry over to the graded monad. In doing this, we reformulate grading in terms of locally graded categories, showing in particular that graded monads are a particular kind of relative monad. We propose that locally graded categories are a useful setting for work on grading in general.
