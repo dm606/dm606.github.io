@@ -17,6 +17,49 @@
       <hr>
 
       <section>
+        <h2>Drafts</h2>
+        <ul>
+          <li>
+            <strong>The formal theory of relative monads.</strong>
+            <br>Nathanael Arkor and Dylan McDermott.
+            <br>Last updated: February 2023.
+            <br><a href="https://arxiv.org/abs/2302.14014">arXiv</a>
+            <details class="abstract">
+              <summary>abstract</summary>
+              <p>We develop the theory of relative monads and relative adjunctions in a virtual equipment, extending the theory of monads and adjunctions in a 2-category. The theory of relative comonads and relative coadjunctions follows by duality. While some aspects of the theory behave analogously to the non-relative setting, others require new insights. In particular, the universal properties that define the algebra-object and the opalgebra-object for a monad qua trivial relative monad are stronger than the classical notions of algebra-object and opalgebra-object for a monad qua monad. Inter alia, we prove a number of representation theorems for relative monads, establishing the unity of several concepts in the literature, including the devices of Walters, the j-monads of Diers, and the relative monads of Altenkirch, Chapman, and Uustalu. A motivating setting is the virtual equipment V-Cat of categories enriched in a monoidal category V, though many of our results are new even for V = Set.
+            </details>
+          <li>
+            <strong>Galois connecting call-by-value and call-by-name.</strong> (Extended version.)
+            <br>Dylan McDermott and Alan Mycroft.
+            <br>Last updated: February 2023.
+            <br><a href="drafts/value-name.pdf">PDF</a>
+            <details class="abstract">
+              <summary>abstract</summary>
+              <p> We establish a general framework for reasoning about the relationship between call-by-value and call-by-name.
+              <p>In languages with side-effects, call-by-value and call-by-name executions of programs often have different, but related, observable behaviours. For example, if a program might diverge but otherwise has no side-effects, then whenever it terminates under call-by-value, it terminates with the same result under call-by-name. We propose a technique for stating and proving these properties. The key ingredient is Levy’s call-by-push-value calculus, which we use as a framework for reasoning about evaluation orders. We show that the call-by-value and call-by-name translations of expressions into call-by-push-value have related observable behaviour under certain conditions on side-effects, which we identify. We then use this fact to construct maps between the call-by-value and call-by-name interpretations of types, and identify further properties of side-effects that imply these maps form a Galois connection. These properties hold for some side-effects (such as divergence), but not others (such as mutable state). This gives rise to a general reasoning principle that relates call-by-value and call-by-name. We apply the reasoning principle to example side-effects including divergence and nondeterminism.
+            </details>
+          <li>
+            <strong>Canonical gradings of monads.</strong>
+            <br>Flavien Breuvart, Dylan McDermott, and Tarmo Uustalu.
+            <br>Last updated: October 2022.
+            <br><a href="drafts/canonical-gradings.pdf">PDF</a>
+            <details class="abstract">
+              <summary>abstract</summary>
+              <p>We define a notion of grading of a monoid T in a monoidal category C, relative to a class of morphisms M (which provide a notion of M-subobject). We show that, under reasonable conditions (including that M forms a factorization system), there is a canonical grading of T. Our application is to graded monads and models of computational effects. We demonstrate our results by characterizing the canonical gradings of a number of monads, for which C is endofunctors with composition. We also show that we can obtain canonical grades for algebraic operations.
+            </details>
+          <li>
+            <strong>Higher-order algebraic theories.</strong>
+            <br>Nathanael Arkor and Dylan McDermott.
+            <br>Last updated: January 2021. See Chapter 4 of <a href="https://doi.org/10.17863/CAM.86347">Nathanael's thesis</a> for a more recent account.
+            <br><a href="drafts/hoat.pdf">PDF</a>
+            <details class="abstract">
+              <summary>abstract</summary>
+              <p>Algebraic theories give a presentation-free categorical formulation of universal algebraic structure: objects equipped with first-order operators, subject to equational laws. Similarly, higher-order algebraic theories describe objects equipped with higher-order, variable-binding operators, such as logical quantifiers or λ-abstraction. While higher-order structures abound in mathematics and computer science, there exists no systematic treatment in the spirit of that for first-order structure. This has led to a proliferation of variations of higher-order theory, and consequently a lacklustre general understanding. We take the first steps to rectify this, defining a notion of multisorted higher-order algebraic theory and carrying out a development analogous to that of the first-order setting. In addition to unifying various previous notions, we (1) establish a correspondence between higher-order algebraic theories and a class of (relative) monads, whose algebras describe the closed-term structure of the corresponding theories; (2) prove that the categories of higher-order algebraic theories, and of the term algebras for a higher-order algebraic theory, are locally strongly finitely presentable; (3) give a new explanation for the apparent asymmetry between models of algebraic theories in the category of sets, and models in arbitrary cartesian categories.
+            </details>
+        </ul>
+      </section>
+
+      <section>
         <h2>Publications</h2>
         <ul>
           <li>
@@ -145,39 +188,6 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Drafts</h2>
-        <ul>
-          <li>
-            <strong>Canonical gradings of monads.</strong>
-            <br>Flavien Breuvart, Dylan McDermott, and Tarmo Uustalu.
-            <br>Last updated: October 2022.
-            <br><a href="drafts/canonical-gradings.pdf">PDF</a>
-            <details class="abstract">
-              <summary>abstract</summary>
-              <p>We define a notion of grading of a monoid T in a monoidal category C, relative to a class of morphisms M (which provide a notion of M-subobject). We show that, under reasonable conditions (including that M forms a factorization system), there is a canonical grading of T. Our application is to graded monads and models of computational effects. We demonstrate our results by characterizing the canonical gradings of a number of monads, for which C is endofunctors with composition. We also show that we can obtain canonical grades for algebraic operations.
-            </details>
-          <li>
-            <strong>Galois connecting call-by-value and call-by-name.</strong> (Extended version.)
-            <br>Dylan McDermott and Alan Mycroft.
-            <br>Last updated: February 2022.
-            <br><a href="drafts/value-name.pdf">PDF</a>
-            <details class="abstract">
-              <summary>abstract</summary>
-              <p>We establish a general framework for reasoning about the relationship between call-by-value and call-by-name.
-              <p>In languages with side-effects, call-by-value and call-by-name executions of programs often have different, but related, observable behaviours. For example, if a program might diverge but otherwise has no side-effects, then whenever it terminates under call-by-value, it terminates with the same result under call-by-name. We propose a technique for stating and proving these properties. The key ingredient is Levy's call-by-push-value calculus, which we use as a framework for reasoning about evaluation orders. We construct maps between the call-by-value and call-by-name interpretations of types. We then identify properties of side-effects that imply these maps form a Galois connection. These properties hold for some side-effects (such as divergence), but not others (such as mutable state). This gives rise to a general reasoning principle that relates call-by-value and call-by-name. We apply the reasoning principle to example side-effects including divergence and nondeterminism.
-            </details>
-          <li>
-            <strong>Higher-order algebraic theories.</strong>
-            <br>Nathanael Arkor and Dylan McDermott.
-            <br>Last updated: January 2021.
-            <br><a href="drafts/hoat.pdf">PDF</a>
-            <details class="abstract">
-              <summary>abstract</summary>
-              <p>Algebraic theories give a presentation-free categorical formulation of universal algebraic structure: objects equipped with first-order operators, subject to equational laws. Similarly, higher-order algebraic theories describe objects equipped with higher-order, variable-binding operators, such as logical quantifiers or λ-abstraction. While higher-order structures abound in mathematics and computer science, there exists no systematic treatment in the spirit of that for first-order structure. This has led to a proliferation of variations of higher-order theory, and consequently a lacklustre general understanding. We take the first steps to rectify this, defining a notion of multisorted higher-order algebraic theory and carrying out a development analogous to that of the first-order setting. In addition to unifying various previous notions, we (1) establish a correspondence between higher-order algebraic theories and a class of (relative) monads, whose algebras describe the closed-term structure of the corresponding theories; (2) prove that the categories of higher-order algebraic theories, and of the term algebras for a higher-order algebraic theory, are locally strongly finitely presentable; (3) give a new explanation for the apparent asymmetry between models of algebraic theories in the category of sets, and models in arbitrary cartesian categories.
-            </details>
-        </ul>
-      </section>
       <section>
         <h2>PhD thesis</h2>
         <ul>
