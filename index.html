@@ -48,15 +48,6 @@
               <p>In languages with side-effects, call-by-value and call-by-name executions of programs often have different, but related, observable behaviours. For example, if a program might diverge but otherwise has no side-effects, then whenever it terminates under call-by-value, it terminates with the same result under call-by-name. We propose a technique for stating and proving these properties. The key ingredient is Levy’s call-by-push-value calculus, which we use as a framework for reasoning about evaluation orders. We show that the call-by-value and call-by-name translations of expressions into call-by-push-value have related observable behaviour under certain conditions on side-effects, which we identify. We then use this fact to construct maps between the call-by-value and call-by-name interpretations of types, and identify further properties of side-effects that imply these maps form a Galois connection. These properties hold for some side-effects (such as divergence), but not others (such as mutable state). This gives rise to a general reasoning principle that relates call-by-value and call-by-name. We apply the reasoning principle to example side-effects including divergence and nondeterminism.
             </details>
           <li>
-            <strong>Canonical gradings of monads.</strong>
-            <br>Flavien Breuvart, Dylan McDermott, and Tarmo Uustalu.
-            <br>Last updated: July 2023.
-            <br><a href="drafts/canonical-gradings.pdf">PDF</a>
-            <details class="abstract">
-              <summary>abstract</summary>
-              <p>We define a notion of grading of a monoid T in a monoidal category C, relative to a class of morphisms M (which provide a notion of M-subobject). We show that, under reasonable conditions (including that M forms a factorization system), there is a canonical grading of T. Our application is to graded monads and models of computational effects. We demonstrate our results by characterizing the canonical gradings of a number of monads, for which C is endofunctors with composition. We also show that we can obtain canonical grades for algebraic operations.
-            </details>
-          <li>
             <strong>Higher-order algebraic theories.</strong>
             <br>Nathanael Arkor and Dylan McDermott.
             <br>Last updated: January 2021. See Chapter 4 of <a href="https://doi.org/10.17863/CAM.86347">Nathanael's thesis</a> for a more recent account.
@@ -102,8 +93,8 @@
           <li>
             <strong>Canonical gradings of monads.</strong>
             <br>Flavien Breuvart, Dylan McDermott, and Tarmo Uustalu.
-            <br>ACT 2022. (To appear.)
-            <br><a href="drafts/canonical-gradings.pdf">draft</a>, <a href="talks/act2022.pdf">slides</a>
+            <br>ACT 2022.<a href="https://doi.org/10.4204/EPTCS.380.1">10.4204/EPTCS.380.1</a>
+            <br><a href="canonical-gradings.pdf">local PDF</a>, <a href="talks/act2022.pdf">slides</a>
             <details class="abstract">
               <summary>abstract</summary>
               <p>We define a notion of grading of a monoid T in a monoidal category C, relative to a class of morphisms M (which provide a notion of M-subobject). We show that, under reasonable conditions (including that M forms a factorization system), there is a canonical grading of T. Our application is to graded monads and models of computational effects. We demonstrate our results by characterizing the canonical gradings of a number of monads, for which C is endofunctors with composition. We also show that we can obtain canonical grades for algebraic operations.
