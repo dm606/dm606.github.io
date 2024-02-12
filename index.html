@@ -18,7 +18,7 @@
 
       <section>
         <h2>Drafts</h2>
-        <ul>
+        <ol reversed>
           <li>
             <strong>Relative monadicity.</strong>
             <br>Nathanael Arkor and Dylan McDermott.
@@ -46,12 +46,12 @@
               <summary>abstract</summary>
               <p>Algebraic theories give a presentation-free categorical formulation of universal algebraic structure: objects equipped with first-order operators, subject to equational laws. Similarly, higher-order algebraic theories describe objects equipped with higher-order, variable-binding operators, such as logical quantifiers or λ-abstraction. While higher-order structures abound in mathematics and computer science, there exists no systematic treatment in the spirit of that for first-order structure. This has led to a proliferation of variations of higher-order theory, and consequently a lacklustre general understanding. We take the first steps to rectify this, defining a notion of multisorted higher-order algebraic theory and carrying out a development analogous to that of the first-order setting. In addition to unifying various previous notions, we (1) establish a correspondence between higher-order algebraic theories and a class of (relative) monads, whose algebras describe the closed-term structure of the corresponding theories; (2) prove that the categories of higher-order algebraic theories, and of the term algebras for a higher-order algebraic theory, are locally strongly finitely presentable; (3) give a new explanation for the apparent asymmetry between models of algebraic theories in the category of sets, and models in arbitrary cartesian categories.
             </details>
-        </ul>
+        </ol>
       </section>
 
       <section>
         <h2>Publications</h2>
-        <ul>
+        <ol reversed>
           <li>
             <strong>Galois connecting call-by-value and call-by-name.</strong>
             <br>Dylan McDermott and Alan Mycroft.
@@ -185,7 +185,7 @@
               <summary>abstract</summary>
               <p>Garbage collection greatly improves programmer productivity and ensures memory safety. Manual memory management on the other hand often delivers better performance but is typically unsafe and can lead to system crashes or security vulnerabilities. We propose integrating safe manual memory management with garbage collection in the .NET runtime to get the best of both worlds. In our design, programmers can choose between allocating objects in the garbage collected heap or the manual heap. All existing applications run unmodified, and without any performance degradation, using the garbage collected heap. Our programming model for manual memory management is flexible: although objects in the manual heap can have a single owning pointer, we allow deallocation at any program point and concurrent sharing of these objects amongst all the threads in the program. Experimental results from our .NET CoreCLR implementation on real-world applications show substantial performance gains especially in multithreaded scenarios: up to 3x savings in peak working sets and 2x improvements in runtime.
             </details>
-        </ul>
+        </ol>
       </section>
 
       <section>
@@ -201,7 +201,7 @@
       <section>
         <h2>Some talks</h2>
         <p>There is also a <a href="talks/">more complete list</a>.
-        <ul>
+        <ol reversed>
           <li>
             <strong>Flexible presentations of graded monads.</strong>
             <br>Shin-ya Katsumata, Dylan McDermott, Tarmo Uustalu, and Nicolas Wu.
@@ -237,6 +237,6 @@
             <br>Dylan McDermott and Tarmo Uustalu.
             <br>MSFP 2022, Munich, Germany.
             <br><a href="talks/msfp2022.pdf">slides</a>
-        </ul>
+        </ol>
       </section>
     </main>
