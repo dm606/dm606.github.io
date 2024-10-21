@@ -17,41 +17,26 @@
       <hr>
 
       <section>
-        <h2>Drafts</h2>
+        <h2>Publications</h2>
         <ol reversed>
           <li>
-            <strong>The pullback theorem for relative monads.</strong>
+            <strong>The nerve theorem for relative monads.</strong>
             <br>Nathanael Arkor and Dylan McDermott.
-            <br>Last updated: April 2024.
+            <br>To appear in Theory and Applications of Categories.
             <br><a href="https://arxiv.org/abs/2404.01281">arXiv</a>
             <details class="abstract">
               <summary>abstract</summary>
-              <p>A fundamental result in the theory of monads is the characterisation of the category of algebras for a monad in terms of a pullback of the category of presheaves on the category of free algebras: intuitively, this expresses that every algebra is a colimit of free algebras. We establish an analogous result for enriched relative monads with dense roots, and explain how it generalises the nerve theorems for monads with arities and nervous monads. As an application, we derive sufficient conditions for the existence of algebraic colimits of relative monads. More generally, we show that the pullback theorem for relative monads holds in any exact virtual equipment. In doing so, we are led to study the relationship between a j-relative monad T and its associated loose-monad E(j, T), and consequently show that the opalgebra object and the algebra object for T may be constructed from certain double categorical limits and colimits associated to E(j, T).
+              <p>A fundamental result in the theory of monads is the characterisation of the category of algebras for a monad in terms of a pullback of the category of presheaves on the category of free algebras: intuitively, this expresses that every algebra is a colimit of free algebras. We establish an analogous result for enriched relative monads with dense roots, and explain how it generalises the nerve theorems for monads with arities and nervous monads. As an application, we derive sufficient conditions for the existence of algebraic colimits of relative monads. More generally, we establish such a characterisation of the category of algebras in the context of an exact virtual equipment. In doing so, we are led to study the relationship between a j-relative monad T and its associated loose-monad E(j, T), and consequently show that the opalgebra object and the algebra object for T may be constructed from certain double categorical limits and colimits associated to E(j, T).
             </details>
           <li>
             <strong>Relative monadicity.</strong>
             <br>Nathanael Arkor and Dylan McDermott.
-            <br>Last updated: April 2024.
+            <br>Journal of Algebra, 2025. <a href="https://doi.org/10.1016/j.jalgebra.2024.08.040">doi:10.1016/j.jalgebra.2024.08.040</a>
             <br><a href="https://arxiv.org/abs/2305.10405">arXiv</a>
             <details class="abstract">
               <summary>abstract</summary>
-              <p>We establish a relative monadicity theorem for relative monads with dense roots in a virtual equipment, specialising to a relative monadicity theorem for enriched relative monads. In particular, for a dense V-functor j : A → E, a V-functor r : D → E is j-monadic if and only if r admits a left j-relative adjoint and creates j-absolute colimits. Furthermore, we examine the interaction between the pasting law for relative adjunctions and relative monadicity. As a consequence, we derive necessary and sufficient conditions for the (j-)monadicity of the composite of a V-functor with a (j-)monadic V-functor. 
+              <p>We establish a relative monadicity theorem for relative monads with dense roots in a virtual equipment, specialising to a relative monadicity theorem for enriched relative monads. In particular, for a dense V-functor j : A → E, a V-functor r : D → E is j-monadic if and only if r admits a left j-relative adjoint and creates j-absolute colimits. This provides a refinement of the classical monadicity theorem -- characterising those categories whose objects are given by those of E equipped with algebraic structure -- in which the arities of the algebraic operations are valued in A. In particular, when j = 1, we recover a formal monadicity theorem. Furthermore, we examine the interaction between the pasting law for relative adjunctions and relative monadicity. As a consequence, we derive necessary and sufficient conditions for the (j-relative) monadicity of the composite of a V-functor with a (j-relatively) monadic V-functor.
             </details>
-          <li>
-            <strong>Higher-order algebraic theories.</strong>
-            <br>Nathanael Arkor and Dylan McDermott.
-            <br>Last updated: January 2021. See Chapter 4 of <a href="https://doi.org/10.17863/CAM.86347">Nathanael's thesis</a> for a more recent account.
-            <br><a href="drafts/hoat.pdf">PDF</a>
-            <details class="abstract">
-              <summary>abstract</summary>
-              <p>Algebraic theories give a presentation-free categorical formulation of universal algebraic structure: objects equipped with first-order operators, subject to equational laws. Similarly, higher-order algebraic theories describe objects equipped with higher-order, variable-binding operators, such as logical quantifiers or λ-abstraction. While higher-order structures abound in mathematics and computer science, there exists no systematic treatment in the spirit of that for first-order structure. This has led to a proliferation of variations of higher-order theory, and consequently a lacklustre general understanding. We take the first steps to rectify this, defining a notion of multisorted higher-order algebraic theory and carrying out a development analogous to that of the first-order setting. In addition to unifying various previous notions, we (1) establish a correspondence between higher-order algebraic theories and a class of (relative) monads, whose algebras describe the closed-term structure of the corresponding theories; (2) prove that the categories of higher-order algebraic theories, and of the term algebras for a higher-order algebraic theory, are locally strongly finitely presentable; (3) give a new explanation for the apparent asymmetry between models of algebraic theories in the category of sets, and models in arbitrary cartesian categories.
-            </details>
-        </ol>
-      </section>
-
-      <section>
-        <h2>Publications</h2>
-        <ol reversed>
           <li>
             <strong>The formal theory of relative monads.</strong>
             <br>Nathanael Arkor and Dylan McDermott.
@@ -193,6 +178,21 @@
             <details class="abstract">
               <summary>abstract</summary>
               <p>Garbage collection greatly improves programmer productivity and ensures memory safety. Manual memory management on the other hand often delivers better performance but is typically unsafe and can lead to system crashes or security vulnerabilities. We propose integrating safe manual memory management with garbage collection in the .NET runtime to get the best of both worlds. In our design, programmers can choose between allocating objects in the garbage collected heap or the manual heap. All existing applications run unmodified, and without any performance degradation, using the garbage collected heap. Our programming model for manual memory management is flexible: although objects in the manual heap can have a single owning pointer, we allow deallocation at any program point and concurrent sharing of these objects amongst all the threads in the program. Experimental results from our .NET CoreCLR implementation on real-world applications show substantial performance gains especially in multithreaded scenarios: up to 3x savings in peak working sets and 2x improvements in runtime.
+            </details>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Drafts</h2>
+        <ol reversed>
+          <li>
+            <strong>Higher-order algebraic theories.</strong>
+            <br>Nathanael Arkor and Dylan McDermott.
+            <br>Last updated: January 2021. See Chapter 4 of <a href="https://doi.org/10.17863/CAM.86347">Nathanael's thesis</a> for a more recent account.
+            <br><a href="drafts/hoat.pdf">PDF</a>
+            <details class="abstract">
+              <summary>abstract</summary>
+              <p>Algebraic theories give a presentation-free categorical formulation of universal algebraic structure: objects equipped with first-order operators, subject to equational laws. Similarly, higher-order algebraic theories describe objects equipped with higher-order, variable-binding operators, such as logical quantifiers or λ-abstraction. While higher-order structures abound in mathematics and computer science, there exists no systematic treatment in the spirit of that for first-order structure. This has led to a proliferation of variations of higher-order theory, and consequently a lacklustre general understanding. We take the first steps to rectify this, defining a notion of multisorted higher-order algebraic theory and carrying out a development analogous to that of the first-order setting. In addition to unifying various previous notions, we (1) establish a correspondence between higher-order algebraic theories and a class of (relative) monads, whose algebras describe the closed-term structure of the corresponding theories; (2) prove that the categories of higher-order algebraic theories, and of the term algebras for a higher-order algebraic theory, are locally strongly finitely presentable; (3) give a new explanation for the apparent asymmetry between models of algebraic theories in the category of sets, and models in arbitrary cartesian categories.
             </details>
         </ol>
       </section>
