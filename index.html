@@ -21,6 +21,16 @@
         <h2>Publications</h2>
         <ol reversed>
           <li>
+            <strong>Grading call-by-push-value, explicitly and implicitly</strong>
+            <br>Dylan McDermott
+            <br>To appear at FSCD 2025.
+            <br><a href="grading-cbpv.pdf">local PDF</a>
+            <details class="abstract">
+              <summary>abstract</summary>
+              <p>We present call-by-push-value with effects (CBPVE), a refinement of Levy's call-by-push-value (CBPV) calculus in which the types contain behavioural information about the effects of computations. CBPVE fits well into the existing literature on graded types and computational effects. We demonstrate this by providing graded call-by-value and call-by-name translations into CBPVE, and a semantics based on algebras of a graded monad.
+              <p> CBPVE is designed as a standalone calculus, with explicit grade information in the syntax. We use it to study the assignment of graded types to the terms of an ungraded calculus such as CBPV, essentially treating the grades as implicit. To interpret such terms in a model that accounts for the grades, one has to prove a coherence result for the implicit grades. We show that, in the case of a graded monadic semantics, the necessary coherence result is false in general. To solve this problem, we show that a mild condition on the algebra of grades is enough to guarantee coherence, giving the first proof of a coherence result for grading, and hence also the first graded monadic semantics for CBPV computations.
+            </details>
+          <li>
             <strong>The nerve theorem for relative monads.</strong>
             <br>Nathanael Arkor and Dylan McDermott.
             <br>Theory and Applications of Categories, 2025.
