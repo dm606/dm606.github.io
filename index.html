@@ -21,6 +21,15 @@
         <h2>Publications</h2>
         <ol reversed>
           <li>
+            <strong>Denotational reasoning for asynchronous multiparty session types</strong>
+            <br>Dylan McDermott and Nobuko Yoshida
+            <br>ESOP 2026 (to appear).
+            <br><a href="denotational-asynchronous-mpst.pdf">local PDF</a>
+            <details class="abstract">
+              <summary>abstract</summary>
+              <p>We provide the first denotational semantics for asynchronous multiparty session types with precise asynchronous subtyping. Our semantics enables us to reason about asynchronous message-passing, in which message-sending is non-blocking. It enables us to prove the correctness of communication optimisations, in particular, those involving reordering of messages. Our development crucially relies on modelling message-passing as a computational effect. We apply grading, a paradigm for tracking computational effects, to asynchronous message-passing, demonstrating that multiparty session typing can be viewed as an instance of grading. We demonstrate the utility of our model by showing that it forms an adequate denotational semantics for a call-by-value asynchronous message-passing calculus, that ensures communication safety, deadlock-freedom and liveness in the presence of communication optimisations.
+            </details>
+          <li>
             <strong>Grading call-by-push-value, explicitly and implicitly</strong>
             <br>Dylan McDermott
             <br>FSCD 2025. <a href="https://doi.org/10.4230/LIPIcs.FSCD.2025.28">doi:10.4230/LIPIcs.FSCD.2025.28</a>
