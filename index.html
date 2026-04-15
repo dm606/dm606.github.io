@@ -22,22 +22,22 @@
         <ol reversed>
           <li>
             <strong>Denotational reasoning for asynchronous multiparty session types</strong>
-            <br>Dylan McDermott and Nobuko Yoshida
-            <br>ESOP 2026 (to appear).
-            <br><a href="denotational-asynchronous-mpst.pdf">local PDF</a>
+            <br>Dylan McDermott and Nobuko Yoshida.
+            <br>ESOP 2026. <a href="https://doi.org/10.1007/978-3-032-22723-2_3">doi:10.1007/978-3-032-22723-2_3</a>
+            <br><a href="denotational-asynchronous-mpst.pdf">local PDF</a>, <a href="https://arxiv.org/abs/2604.10646">arXiv</a>, <a href="talks/esop2026.pdf">slides</a>
             <details class="abstract">
               <summary>abstract</summary>
               <p>We provide the first denotational semantics for asynchronous multiparty session types with precise asynchronous subtyping. Our semantics enables us to reason about asynchronous message-passing, in which message-sending is non-blocking. It enables us to prove the correctness of communication optimisations, in particular, those involving reordering of messages. Our development crucially relies on modelling message-passing as a computational effect. We apply grading, a paradigm for tracking computational effects, to asynchronous message-passing, demonstrating that multiparty session typing can be viewed as an instance of grading. We demonstrate the utility of our model by showing that it forms an adequate denotational semantics for a call-by-value asynchronous message-passing calculus, that ensures communication safety, deadlock-freedom and liveness in the presence of communication optimisations.
             </details>
           <li>
             <strong>Grading call-by-push-value, explicitly and implicitly</strong>
-            <br>Dylan McDermott
+            <br>Dylan McDermott.
             <br>FSCD 2025. <a href="https://doi.org/10.4230/LIPIcs.FSCD.2025.28">doi:10.4230/LIPIcs.FSCD.2025.28</a>
-            <br><a href="grading-cbpv.pdf">local PDF</a>
+            <br><a href="grading-cbpv.pdf">local PDF</a>, <a href="talks/fscd2025.pdf">slides</a>
             <details class="abstract">
               <summary>abstract</summary>
               <p>We present call-by-push-value with effects (CBPVE), a refinement of Levy's call-by-push-value (CBPV) calculus in which the types contain behavioural information about the effects of computations. CBPVE fits well into the existing literature on graded types and computational effects. We demonstrate this by providing graded call-by-value and call-by-name translations into CBPVE, and a semantics based on algebras of a graded monad.
-              <p> CBPVE is designed as a standalone calculus, with explicit grade information in the syntax. We use it to study the assignment of graded types to the terms of an ungraded calculus such as CBPV, essentially treating the grades as implicit. To interpret such terms in a model that accounts for the grades, one has to prove a coherence result for the implicit grades. We show that, in the case of a graded monadic semantics, the necessary coherence result is false in general. To solve this problem, we show that a mild condition on the algebra of grades is enough to guarantee coherence, giving the first proof of a coherence result for grading, and hence also the first graded monadic semantics for CBPV computations.
+              <p>CBPVE is designed as a standalone calculus, with explicit grade information in the syntax. We use it to study the assignment of graded types to the terms of an ungraded calculus such as CBPV, essentially treating the grades as implicit. To interpret such terms in a model that accounts for the grades, one has to prove a coherence result for the implicit grades. We show that, in the case of a graded monadic semantics, the necessary coherence result is false in general. To solve this problem, we show that a mild condition on the algebra of grades is enough to guarantee coherence, giving the first proof of a coherence result for grading, and hence also the first graded monadic semantics for CBPV computations.
             </details>
           <li>
             <strong>The nerve theorem for relative monads.</strong>
@@ -232,6 +232,16 @@
         <p>There is also a <a href="talks/">more complete list</a>.
         <ol reversed>
           <li>
+            <strong>Probabilistic liveness for multiparty session types</strong>
+            <br>Dylan McDermott.
+            <br>PLACES 2026, Turin, Italy.
+            <br><a href="talks/places2026.pdf">slides</a>
+          <li>
+            <strong>Multiparty session typed message-passing, as a computational effect</strong>
+            <br>Dylan McDermott.
+            <br>Mobility Reading Group, University of Oxford, November 2025.
+            <br><a href="talks/oxford2025.pdf">slides</a>
+          <li>
             <strong>The formal theories of presheaves and cocompletions.</strong>
             <br>Nathanael Arkor and Dylan McDermott.
             <br>Second Virtual Workshop on Double Categories, 2024.
@@ -242,16 +252,6 @@
             <br>ICFP 2022, Ljubljana, Slovenia.
             <br><a href="talks/icfp2022.pdf">slides</a>
           <li>
-            <strong>Galois connecting call-by-value and call-by-name.</strong>
-            <br>Dylan McDermott and Alan Mycroft.
-            <br>FSCD 2022, Haifa, Israel.
-            <br><a href="talks/fscd2022.pdf">slides</a>
-          <li>
-            <strong>Canonical gradings of monads.</strong>
-            <br>Flavien Breuvart, Dylan McDermott, and Tarmo Uustalu.
-            <br>ACT 2022, Glasgow, UK.
-            <br><a href="talks/act2022.pdf">slides</a>
-          <li>
             <strong>Higher-order algebraic theories.</strong>
             <br>Nathanael Arkor and Dylan McDermott.
             <br>Partout seminar, LIX, Paris (online), May 2022.
@@ -261,11 +261,6 @@
             <br>Shin-ya Katsumata, Dylan McDermott, Tarmo Uustalu, and Nicolas Wu.
             <br>MSP101 seminar, University of Strathclyde (online), April 2022.
             <br><a href="talks/strathclyde2022.pdf">slides</a>
-          <li>
-            <strong>What makes a strong monad?</strong>
-            <br>Dylan McDermott and Tarmo Uustalu.
-            <br>MSFP 2022, Munich, Germany.
-            <br><a href="talks/msfp2022.pdf">slides</a>
         </ol>
       </section>
     </main>
